@@ -1,9 +1,13 @@
-# CallJSonClient
+# Call JavaScript function on the client
+
 
 Problem: we have measurements on the server (from a multimeter, powermeter or whatnot)
 and the measurements shall be displayed on a web GUI in a SVG in realtime.
 
 The SVG shows the data as polylines. For this example, currently 2 polylines are possible.
+
+To add a new point to a polyline in the SVG, we need to call JavaScript code on the client.
+This repo shows an example how this can be achieved.
 
 ## Implementation
 
@@ -31,6 +35,7 @@ The SVG is defined in index.html.heex
 ```
 
 The device and data collection is currently simulated in a timer callback in a LiveView (index.ex):
+The real project maintains connections to several measurement devices to control them a collect measurement data.
 
 ```
   def handle_info(:timer, socket) do

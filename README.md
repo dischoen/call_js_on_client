@@ -30,7 +30,7 @@ The SVG is defined in index.html.heex
     </svg>
 ```
 
-The device and data collection is currently simulated in a timer callback in a LiveView:
+The device and data collection is currently simulated in a timer callback in a LiveView (index.ex):
 
 ```
   def handle_info(:timer, socket) do

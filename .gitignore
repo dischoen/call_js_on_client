@@ -35,3 +35,4 @@ call_js_on_client-*.tar
 npm-debug.log
 /assets/node_modules/
 
+.#*

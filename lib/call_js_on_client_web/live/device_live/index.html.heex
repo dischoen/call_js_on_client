@@ -1,0 +1,25 @@
+<.header>
+  Realtime plot
+</.header>
+
+ <div> 
+  <svg id="xyplot" width="500" height="500">
+        <line x1="0" y1="0" x2="0" y2="500" stroke="black" stroke-width="5" />
+        <line x1="0" y1="500" x2="500" y2="500" stroke="black" stroke-width="5" />
+        <g id="transformer" transform="translate(0,500)">
+            <g transform="scale(1,-1)">
+              <polyline id="polyline1"
+                        points="500,500"
+                        fill="none"
+                        stroke="blue"
+                        stroke-width="2" />
+              <polyline id="polyline2"
+                        points="500,500"
+                        fill="none"
+                        stroke="red"
+                        stroke-width="2" />
+            </g>
+        </g>
+    </svg>
+   </div>
+

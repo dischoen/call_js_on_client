@@ -71,3 +71,12 @@ window.addEventListener("phx:xy_plot_event", (e) => {
 ```
 
 This defines an event listener which calls add_point with the DOM element (the polyline inside of the SVG) and the new data point.
+
+## Setup and execution
+
+  * Run `mix setup` to install and setup dependencies
+  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+
+Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+
+![Screenshot of the xy plot in action](pix/screenshot.png)
